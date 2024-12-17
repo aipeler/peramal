@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<
+<html lang="en">
+<head>
+  
+  <
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+<title>AI Peramal</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+  <h1>Prediksi AI</h1>
+  
+  
+<form id="predictionForm">
+    
+    
+<label for="inputData">Masukkan Data:</label>
+    <input type="number" id="inputData" required>
+    
+ 
+<button type="submit">Prediksi</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.jso
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predictionFo
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predict
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('pr
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predictionForm').addEventListener('subm
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predictionForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const inputData = parseFloat(document.getElementById('inputData
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predictionForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const inputData = parseFloat(document.getElementById('input
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predictionForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const inputData = parseFloat(document.getElementById('i
+
+    // Fungsi untuk memuat model dan melakukan prediksi
+    async function loadModelAndPredict(inputData) {
+      const model = await tf.loadLayersModel('model.json'); // Gantilah dengan URL model Anda
+      const prediction = model.predict(tf.tensor([inputData]));
+      prediction.print();
+      document.getElementById('result').textContent = `Hasil Prediksi: ${prediction.dataSync()[0]}`;
+    }
+
+    document.getElementById('predictionForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const inputData = parseFloat(document.getElementById('inputData').value);
+      loadModelAndPredict([inputData]);
+    });
+  </script>
+</body>
+
+</
+</html>
